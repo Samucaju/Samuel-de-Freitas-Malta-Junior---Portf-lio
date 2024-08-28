@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samuel de Freitas Malta Junior - Portfólio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Samuel de Freitas Malta Junior</h1>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#sobre">Sobre Mim</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><button id="theme-toggle">🌙</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="animate-on-scroll">
+        <div class="hero">
+            <h2>Bem-vindo ao Meu Portfólio</h2>
+            <p id="typewriter"></p>
+            <a href="#projetos" class="btn">Ver Projetos</a>
+            <a href="http://linkedin.com/in/samuel-de-freitas-malta-junior-36304420a" target="_blank" class="btn">Conectar no LinkedIn</a>
+        </div>
+    </section>
+
+    <section id="sobre" class="animate-on-scroll">
+        <h2>Sobre Mim</h2>
+        <div class="sobre-container">
+            <img src="img/perfil.jpg" alt="Foto de Samuel de Freitas Malta Junior" class="perfil-foto">
+            <p>Sou um desenvolvedor front-end apaixonado por criar interfaces intuitivas e funcionais...</p>
+        </div>
+    </section>
+
+    <section id="projetos" class="animate-on-scroll">
+        <h2>Projetos</h2>
+        <div class="project-grid">
+            <div class="project">
+                <img src="img/project1.jpg" alt="Projeto 1">
+                <h3>Projeto Fictício 1</h3>
+                <p>Descrição do projeto fictício 1.</p>
+            </div>
+            <div class="project">
+                <img src="img/project2.jpg" alt="Projeto 2">
+                <h3>Projeto Fictício 2</h3>
+                <p>Descrição do projeto fictício 2.</p>
+            </div>
+            <div class="project">
+                <img src="img/project3.jpg" alt="Projeto 3">
+                <h3>Projeto Fictício 3</h3>
+                <p>Descrição do projeto fictício 3.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="habilidades" class="animate-on-scroll">
+        <h2>Habilidades</h2>
+        <ul class="skills">
+            <li>HTML5</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Bootstrap</li>
+            <li>MySQL Server</li>
+        </ul>
+    </section>
+
+    <section id="contato" class="animate-on-scroll">
+        <h2>Contato</h2>
+        <form id="contact-form">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit" class="btn">Enviar</button>
+        </form>
+        <p>Ou ligue para: (11) 98359-2947</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Samuel de Freitas Malta Junior. Todos os direitos reservados.</p>
+    </footer>
+
+    <a href="#home" class="back-to-top">↑ Voltar ao topo</a>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

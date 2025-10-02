@@ -1,101 +1,84 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Samuel de Freitas Malta Junior - Portfólio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-</head>
-<body>
-    <header>
-        <nav>
-            <h1>Samuel de Freitas Malta Junior</h1>
-            <ul>
-                <li><a href="#home">Início</a></li>
-                <li><a href="#sobre">Sobre Mim</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#habilidades">Habilidades</a></li>
-                <li><a href="#contato">Contato</a></li>
-                <li><button id="theme-toggle">🌙</button></li>
-            </ul>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BeeFood – Onboarding</title>
+    <meta name="description" content="Onboarding BeeFood: rápido, simples e sem complicações." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <svg width="0" height="0" class="hidden" aria-hidden="true" focusable="false">
+      <defs>
+        <symbol id="icon-bee" viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="9" fill="#FFD700" />
+          <rect x="5" y="10.5" width="14" height="3" fill="#000000" rx="1.5" />
+          <rect x="7" y="7.5" width="10" height="3" fill="#000000" rx="1.5" />
+          <rect x="7" y="13.5" width="10" height="3" fill="#000000" rx="1.5" />
+          <circle cx="8.5" cy="10" r="1.2" fill="#000000" />
+        </symbol>
+        <symbol id="icon-upload" viewBox="0 0 24 24">
+          <path fill="currentColor" d="M12 3l4 4h-3v6h-2V7H8l4-4zm-7 12h14v6H5v-6z" />
+        </symbol>
+        <symbol id="icon-check" viewBox="0 0 24 24">
+          <path fill="currentColor" d="M9 16.2l-3.5-3.5L4 14.2 9 19l11-11-1.5-1.5z" />
+        </symbol>
+        <symbol id="icon-play" viewBox="0 0 24 24">
+          <path fill="currentColor" d="M8 5v14l11-7z" />
+        </symbol>
+        <symbol id="icon-dashboard" viewBox="0 0 24 24">
+          <path fill="currentColor" d="M3 13h8V3H3v10zm0 8h8v-6H3v6zm10 0h8V11h-8v10zm0-18v6h8V3h-8z" />
+        </symbol>
+        <symbol id="icon-message" viewBox="0 0 24 24">
+          <path fill="currentColor" d="M20 2H4a2 2 0 00-2 2v18l4-4h14a2 2 0 002-2V4a2 2 0 00-2-2z" />
+        </symbol>
+        <symbol id="icon-menu" viewBox="0 0 24 24">
+          <path fill="currentColor" d="M3 6h18v2H3V6zm0 5h18v2H3v-2zm0 5h18v2H3v-2z" />
+        </symbol>
+        <symbol id="icon-star" viewBox="0 0 24 24">
+          <path fill="currentColor" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+        </symbol>
+        <symbol id="icon-whatsapp" viewBox="0 0 24 24">
+          <path fill="currentColor" d="M20.52 3.48A11.94 11.94 0 0012.06 0C5.46 0 .14 5.31.14 11.88c0 2.09.55 4.11 1.6 5.9L0 24l6.38-1.66a12.02 12.02 0 005.68 1.45h.01c6.6 0 11.92-5.31 11.92-11.88a11.84 11.84 0 00-3.47-8.43zm-8.46 19.35h-.01a10.2 10.2 0 01-5.2-1.42l-.37-.22-3.79 1 1.02-3.68-.24-.38a9.82 9.82 0 01-1.52-5.24C1.95 6.4 6.5 1.87 12.06 1.87c2.73 0 5.3 1.06 7.23 2.98a10.1 10.1 0 013 7.13c0 5.56-4.55 10.01-10.23 10.01z" />
+        </symbol>
+        <symbol id="icon-mail" viewBox="0 0 24 24">
+          <path fill="currentColor" d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+        </symbol>
+        <symbol id="icon-help" viewBox="0 0 24 24">
+          <path fill="currentColor" d="M11 18h2v-2h-2v2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 17c-3.86 0-7-3.14-7-7s3.14-7 7-7 7 3.14 7 7-3.14 7-7 7zm-.88-5h1.75c0-2.25 3.25-2.12 3.25-4.62 0-1.78-1.57-3.13-3.62-3.13-1.85 0-3.23.86-3.88 2.25l1.65.98c.35-.75 1.03-1.25 2.23-1.25 1.03 0 1.88.62 1.88 1.5 0 1.88-3.25 2-3.25 4.27z" />
+        </symbol>
+      </defs>
+    </svg>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="#" aria-label="BeeFood">
+          <svg class="logo-icon" aria-hidden="true"><use href="#icon-bee"></use></svg>
+          <span class="logo-text">BeeFood</span>
+        </a>
+        <nav class="nav">
+          <a href="#guia" class="nav-link">Guia do Cliente</a>
+          <a href="#suporte" class="nav-link">Suporte</a>
+          <a href="#form" class="btn btn-primary nav-cta">Comece Agora</a>
         </nav>
+        <button class="hamburger" aria-label="Abrir menu">
+          <svg aria-hidden="true"><use href="#icon-menu"></use></svg>
+        </button>
+      </div>
     </header>
-
-    <section id="home" class="animate-on-scroll">
-        <div class="hero">
-            <h2>Bem-vindo ao Meu Portfólio</h2>
-            <p id="typewriter"></p>
-            <a href="#projetos" class="btn">Ver Projetos</a>
-            <a href="http://linkedin.com/in/samuel-de-freitas-malta-junior-36304420a" target="_blank" class="btn">Conectar no LinkedIn</a>
-        </div>
-    </section>
-
-    <section id="sobre" class="animate-on-scroll">
-        <h2>Sobre Mim</h2>
-        <div class="sobre-container">
-            <img src="img/perfil.jpg" alt="Foto de Samuel de Freitas Malta Junior" class="perfil-foto">
-            <p>Sou um desenvolvedor front-end apaixonado por criar interfaces intuitivas e funcionais...</p>
-        </div>
-    </section>
-
-    <section id="projetos" class="animate-on-scroll">
-        <h2>Projetos</h2>
-        <div class="project-grid">
-            <div class="project">
-                <img src="img/project1.jpg" alt="Projeto 1">
-                <h3>Projeto Fictício 1</h3>
-                <p>Descrição do projeto fictício 1.</p>
+    <main>
+      <section class="hero" id="topo">
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <h1>Bem-vindo ao BeeFood! Onboarding rápido, simples e sem complicações.</h1>
+            <p>Conecte seu negócio em poucos dias com um processo guiado e transparente.</p>
+            <div class="hero-actions">
+              <a href="#form" class="btn btn-primary" id="cta-hero">Comece Agora</a>
+              <a href="#como-funciona" class="btn btn-ghost">Ver como funciona</a>
             </div>
-            <div class="project">
-                <img src="img/project2.jpg" alt="Projeto 2">
-                <h3>Projeto Fictício 2</h3>
-                <p>Descrição do projeto fictício 2.</p>
-            </div>
-            <div class="project">
-                <img src="img/project3.jpg" alt="Projeto 3">
-                <h3>Projeto Fictício 3</h3>
-                <p>Descrição do projeto fictício 3.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="habilidades" class="animate-on-scroll">
-        <h2>Habilidades</h2>
-        <ul class="skills">
-            <li>HTML5</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>Bootstrap</li>
-            <li>MySQL Server</li>
-        </ul>
-    </section>
-
-    <section id="contato" class="animate-on-scroll">
-        <h2>Contato</h2>
-        <form id="contact-form">
-            <label for="name">Nome:</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Mensagem:</label>
-            <textarea id="message" name="message" required></textarea>
-
-            <button type="submit" class="btn">Enviar</button>
-        </form>
-        <p>Ou ligue para: (11) 98359-2947</p>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 Samuel de Freitas Malta Junior. Todos os direitos reservados.</p>
-    </footer>
-
-    <a href="#home" class="back-to-top">↑ Voltar ao topo</a>
-
-    <script src="scripts.js"></script>
-</body>
-</html>
+            <div class="progress-wrap" aria-label="Progresso do Onboarding">
+              <div class="progress-header">
+                <span>Progresso do Onboarding</span>
+                <strong id="progress-value">0
